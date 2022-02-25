@@ -1,0 +1,7 @@
+<template>
+    <template if:true={userList}>
+        <template for:each={userList} for:item="user">
+            <p key={user.id}>{user.name}</p>
+        </template>
+    </template>
+</template>
